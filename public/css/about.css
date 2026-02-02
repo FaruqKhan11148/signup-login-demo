@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* About Section */
+.about {
+  min-height: 100vh;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  opacity: 0.85;
+  font-size: 18px;
+}
+
+/* Cards */
+.about-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 15px;
+  opacity: 0.8;
+}
