@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Login</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="login.css" />
   </head>
+
   <body>
-    <h1>Login</h1>
-    <form action="/login">
-      <input type="email" name="email" value="1" />
-      <input type="password" name="password" value="1" />
-    </form>
+    <div class="login-card">
+      <h1>Login</h1>
+
+      <form id="loginForm" action="/login" method="POST">
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+          />
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="••••••••"
+            />
+            <span class="toggle-password" id="togglePassword">Show</span>
+          </div>
+          <div class="error" id="passwordError"></div>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div class="extra">
+        Don’t have an account?
+        <a href="/signup">Sign up</a>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
   </body>
-</html> 
+</html>
